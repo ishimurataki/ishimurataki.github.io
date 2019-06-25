@@ -28,6 +28,10 @@ app.get('/resume', (req, res) => {
     res.render('resume');
 })
 
+app.get('*', (req, res) => {
+    res.render('errorpage');
+})
+
 app.listen(port, () => {
     console.log('Server is up on port ' + port);
 });
