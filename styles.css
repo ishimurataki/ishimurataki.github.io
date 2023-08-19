@@ -1,0 +1,18 @@
+@import url(https://db.onlinewebfonts.com/c/cc1fd3ac8497388cfc4da587e06951b0?family=SQ+Market+Regular+Regular);
+
+body {
+    font-family: "SQ Market Regular Regular", "Helvetica Neue", sans-serif;
+    padding-top: 10px;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 2px solid #555555;
+}
+
+header>h4 {
+    padding-left: 10px;
+}
