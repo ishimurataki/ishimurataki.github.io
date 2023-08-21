@@ -16,3 +16,21 @@ header {
 header>h4 {
     padding-left: 10px;
 }
+
+.project-card {
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    opacity: 0.75;
+    transition: .5s ease;
+}
+
+img:hover {
+    opacity: 1.0;
+    max-width: 102%;
+    transition: .5s ease;
+}
