@@ -18,9 +18,14 @@ header>h4 {
 }
 
 .project-card {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     padding-left: 10px;
-    width: 50%;
+    width: 125%;
+    display: grid;
+    align-items: top;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
 }
 
 img {
