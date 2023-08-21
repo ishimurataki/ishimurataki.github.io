@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Omega Centauri';
+    src: url(omega_centauri.ttf);
+}
+
+body, canvas {
+    font-family: 'Omega Centauri';
+    text-align: center;
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+button {
+    font-family: 'Omega Centauri';
+}
+
+h1 {
+	font-family: 'Omega Centauri';
+	font-size:2em;
+	top:10px;
+	color:rgb(235, 133, 133);
+	position: absolute;
+    width: 100%;
+}
+
+.bodyInputs {
+    font-size: 10px;
+    font-family: 'Omega Centauri';
+    border: 2px solid rgb(212, 90, 90);
+    border-radius: 4px;
+    width: 33px;
+    padding: 2px 1px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.topButtons {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 30px;
+    vertical-align:top;
+}
+
+.topButtons:hover {
+    color:rgb(235, 133, 133);
+}
+
+#refreshBtn {
+    font-size: 32px;
+    left: 30px;
+}
+
+#pauseBtn {
+    font-size: 32px;
+    left: 100px;
+}
+
+#playBtn {
+    display: none;
+    font-size: 32px;
+    left: 100px;
+}
+
+#menu {
+    position: absolute;
+    right:10px;
+    top:20px;
+}
+
+#menuBtn {
+    display: inline-block;
+    color: white;
+    position: relative;
+    right: 10px;
+    background-color: Transparent;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    vertical-align:top
+}
+
+#menuBtn:hover {
+    color:rgb(235, 133, 133);
+}
+
+#menuContents {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+    display: none;
+    position: relative;
+    right: 10px;
+    vertical-align:top;
+    background-color: rgba(255, 0, 0, 0.1);
+    color:white;
+    padding: 10px;
+    text-align: left;
+}
+
+#footer {
+    /* font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial; */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

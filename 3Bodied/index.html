@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>3 Bodied! simulation</title>
+        <script src="gl-matrix-min.js"></script>
+        <script src='polar_camera.js'></script>
+        <script src='ui_controls.js'></script>
+        <script src='./polygons/icosahedron.js'></script>
+        <script src='./polygons/cube.js'></script>
+        <script src='./shaders/fs/plain_fs.js'></script>
+        <script src='./shaders/vs/plain_vs.js'></script>
+        <script src='./shaders/fs/flat_fs.js'></script>
+        <script src='./shaders/vs/flat_vs.js'></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <h1>3 Bodied !!! simulation</h1>
+        <i class="fa fa-pause topButtons" id="pauseBtn"></i>
+        <i class="fa fa-refresh topButtons" id="refreshBtn"></i>
+        <i class="fa fa-play topButtons" aria-hidden="true" id="playBtn"></i>
+        <div id="menu">
+            <button id="menuBtn">&#60;</button>
+            <div id="menuContents">
+                <hr> 
+                <b>Initial Position:</b>
+                <br> 
+                <b>B1.</b> X: <input type="number" class="bodyInputs" id="pos1X" value=18>
+                Y: <input type="number" class="bodyInputs" id="pos1Y" value=0>
+                Z: <input type="number" class="bodyInputs" id="pos1Z" value=15>
+                <br>
+                <b>B2.</b> X: <input type="number" class="bodyInputs" id="pos2X" value=1>
+                Y: <input type="number" class="bodyInputs" id="pos2Y" value=-2>
+                Z: <input type="number" class="bodyInputs" id="pos2Z" value=20>
+                <br>
+                <b>B3.</b> X: <input type="number" class="bodyInputs" id="pos3X" value=17>
+                Y: <input type="number" class="bodyInputs" id="pos3Y" value=0>
+                Z: <input type="number" class="bodyInputs" id="pos3Z" value=-10>
+                <br>
+
+                <hr> 
+                <b>Initial Velocity:</b> 
+                <br>
+                <b>B1.</b> X: <input type="number" class="bodyInputs" id="vel1X" value=0>
+                Y: <input type="number" class="bodyInputs" id="vel1Y" value=5>
+                Z: <input type="number" class="bodyInputs" id="vel1Z" value=0>
+                <br>
+                <b>B2.</b> X: <input type="number" class="bodyInputs" id="vel2X" value=0>
+                Y: <input type="number" class="bodyInputs" id="vel2Y" value=0>
+                Z: <input type="number" class="bodyInputs" id="vel2Z" value=-4>
+                <br>
+                <b>B3.</b> X: <input type="number" class="bodyInputs" id="vel3X" value=0>
+                Y: <input type="number" class="bodyInputs" id="vel3Y" value=0>
+                Z: <input type="number" class="bodyInputs" id="vel3Z" value=0>
+                <br>
+                <hr>
+
+                <b>Mass:</b> 
+                <br>
+                <b>B1: </b><input type="number" class="bodyInputs" id="mass1" value=1.4>
+                <b>B2: </b><input type="number" class="bodyInputs" id="mass2" value=0.9>
+                <b>B3: </b><input type="number" class="bodyInputs" id="mass3" value=1.2>
+                <br>
+                <hr>
+                <button type="button" id="toggleTails">Toggle tails!</button>
+            </div>
+        </div>
+        <canvas id="glCanvas" width="640" height="480"></canvas>
+        <div id="footer">Made By: <a href="">Takanao Ishimura</a></div>
+    </body>
+</html>
