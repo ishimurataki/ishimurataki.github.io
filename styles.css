@@ -32,10 +32,12 @@ img {
     max-width: 100%;
     opacity: 0.75;
     transition: .5s ease;
+    border: #ADD8E6 4px solid;
 }
 
 img:hover {
     opacity: 1.0;
     max-width: 102%;
     transition: .5s ease;
+    border: #90EE90 4px solid;
 }
