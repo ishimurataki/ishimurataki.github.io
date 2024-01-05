@@ -17,6 +17,21 @@ header>h4 {
     padding-left: 10px;
 }
 
+header>h4>a {
+    color: black;
+    text-decoration: none;
+}
+
+header>h4>a:hover {
+    font-size: larger;
+    color: #90EE90;
+    transition: .5s ease;
+}
+
+.headerItem {
+    padding-left: 2em;
+}
+
 .project-card {
     padding-top: 10px;
     padding-bottom: 20px;
